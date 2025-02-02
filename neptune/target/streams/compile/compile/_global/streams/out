@@ -1,7 +1,16 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/Neptune.scala:4:26: Unused import[0m
-[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.log4j.{Level, Logger}[0m
-[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/Neptune.scala:4:33: Unused import[0m
-[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.log4j.{Level, Logger}[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/LLM.scala:61:12: constructor cannot be instantiated to expected type;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Some[A][0m
+[0m[[0m[31merror[0m] [0m[0m required: neptune.ImageHasher.ImageHash[0m
+[0m[[0m[31merror[0m] [0m[0m      case Some(h) => h[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/LLM.scala:62:12: pattern type is incompatible with expected type;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : None.type[0m
+[0m[[0m[31merror[0m] [0m[0m required: neptune.ImageHasher.ImageHash[0m
+[0m[[0m[31merror[0m] [0m[0m      case None => return List.empty[Map[String, String]][0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/LLM.scala:62:37: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : List[Map[String,String]][0m
+[0m[[0m[31merror[0m] [0m[0m required: Map[String,String][0m
+[0m[[0m[31merror[0m] [0m[0m      case None => return List.empty[Map[String, String]][0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

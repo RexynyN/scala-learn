@@ -6,7 +6,7 @@ import org.bytedeco.opencv.opencv_core._
 import java.io.File
 
 object ImageHasher {
-    case class ImageHash( path: String, PHash: String, AverageHash: String, BlockMeanHash: String, ColorMomentHash: String, MarrHildrethHash: String, RadialVarianceHash: String)
+    case class ImageHash(PHash: String, AverageHash: String, BlockMeanHash: String, ColorMomentHash: String, MarrHildrethHash: String, RadialVarianceHash: String)
 
     def listFiles(directory: String): Array[String] = {
         val dir = new File(directory)
@@ -31,11 +31,15 @@ object ImageHasher {
         }
     }
 
-    def computeHash(imagePath: String): ImageHash = {
-        // Carregar a imagem
-        val image = imread(imagePath, IMREAD_GRAYSCALE)
+
+    def computeHashFromPath(image: String): ImageHash = {
+        val img = imread(image)
+        computeHash(img)
+    }
+
+    def computeHash(image: Mat): ImageHash = {
         if (image.empty()) {
-            throw new IllegalArgumentException(s"Não foi possível carregar a imagem: $imagePath")
+            throw new IllegalArgumentException("The given image is empty")
         }
 
         // Criar um objeto para armazenar o hash
@@ -59,6 +63,6 @@ object ImageHasher {
         RadialVarianceHash.create().compute(image, hash)
         val radial = hash.data().getStringBytes().map("%02x".format(_)).mkString
 
-        ImageHash(imagePath, pHash, avg, block, color, marr, radial)
+        ImageHash(pHash, avg, block, color, marr, radial)
     }
 }

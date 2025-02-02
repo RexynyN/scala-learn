@@ -1,24 +1,13 @@
-import org.opencv.core._
-import org.opencv.videoio._
-import org.opencv.videoio.Videoio._
+import org.bytedeco.opencv.opencv_core._
+import org.bytedeco.opencv.opencv_videoio.VideoCapture
+import org.bytedeco.opencv.global.opencv_videoio._
 import scala.concurrent._
 import ExecutionContext.Implicits.global
 import java.io._
 import scala.util.{Success, Failure}
+import neptune.ImageHasher
 
 case class VideoHashes(path: String, hashes: List[Map[String, String]])
-
-// Função para calcular o hash da imagem (como exemplo, utilizando uma biblioteca fictícia)
-object ImageHashing {
-
-  def averageHash(image: Mat): String =
-    image.toString() // Placeholder, substitua com seu código de hash
-  def cropResistantHash(image: Mat): String = image.toString() // Placeholder
-  def whash(image: Mat): String = image.toString() // Placeholder
-  def phash(image: Mat): String = image.toString() // Placeholder
-  def dhash(image: Mat): String = image.toString() // Placeholder
-  def colorhash(image: Mat): String = image.toString() // Placeholder
-}
 
 object VideoProcessor {
   val FRAME_INTERVAL = 1000 // 1 segundo
@@ -68,20 +57,29 @@ object VideoProcessor {
 
   // Função para calcular hashes para cada frame
   def computeHashes(frame: Mat): Map[String, String] = {
+    val hashes = ImageHasher.computeHash(frame)
+
     Map(
-      "avg" -> ImageHashing.averageHash(frame),
-      "crop" -> ImageHashing.cropResistantHash(frame),
-      "whash" -> ImageHashing.whash(frame),
-      "phash" -> ImageHashing.phash(frame),
-      "dhash" -> ImageHashing.dhash(frame),
-      "color" -> ImageHashing.colorhash(frame)
+      "avg" -> hashes.AverageHash,
+      "block" -> hashes.BlockMeanHash,
+      "radial" -> hashes.RadialVarianceHash,
+      "phash" -> hashes.PHash,
+      "marr" -> hashes.MarrHildrethHash,
+      "color" -> hashes.ColorMomentHash
     )
   }
-
+    
   // Função para processar um vídeo e gerar seus hashes
   def videoHashes(path: String): List[Map[String, String]] = {
     val vidCap = new VideoCapture(path)
+    vidCap.open(path)
 
+    if (!vidCap.isOpened) {
+      println(s"Error: Could not open video file: $path")
+      return List.empty[Map[String, String]]
+    }
+
+    println(vidCap)
     val frameCount = vidCap.get(CAP_PROP_FRAME_COUNT).toLong
     println("Framecount: " + frameCount)
     val fps = vidCap.get(CAP_PROP_FPS)
@@ -97,8 +95,7 @@ object VideoProcessor {
       val frame = new Mat()
       if (vidCap.read(frame)) {
         val hash = computeHashes(frame)
-        hashes =
-          hash + ("frame_order" -> (count / FRAME_INTERVAL).toString) :: hashes
+        hashes = hash + ("frame_order" -> (count / FRAME_INTERVAL).toString) :: hashes
       }
       count += FRAME_INTERVAL
     }
@@ -147,10 +144,12 @@ object VideoProcessor {
 
 object Main {
   def main(args: Array[String]): Unit = {
-    // System.load(Core.NATIVE_LIBRARY_NAME) 
+    // System.load(Core.NATIVE_LIBRARY_NAME)
+
     // Caminho para a pasta dos vídeos
-    // val directoryPath = "/mnt/c/users/breno/downloads/bingus"
+    // val directoryPath = "/mnt/c/users/breno/downloads/"
     // VideoProcessor.startHashing(directoryPath)
-    VideoProcessor.videoHashes("/mnt/c/users/breno/downloads/twitter.mp4")
+    
+    VideoProcessor.videoHashes("twitter.mp4")
   }
 }
