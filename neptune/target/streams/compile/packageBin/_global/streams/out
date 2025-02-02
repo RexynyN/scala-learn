@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/breno/codes/scala-cv/neptune/target/scala-2.12/neptune_2.12-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageHash.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-cv/neptune/target/scala-2.12/classes/ImageHash.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageHash$ImageHash.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-cv/neptune/target/scala-2.12/classes/ImageHash$ImageHash.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageHash$ImageHash$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-cv/neptune/target/scala-2.12/classes/ImageHash$ImageHash$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageHash$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-cv/neptune/target/scala-2.12/classes/ImageHash$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

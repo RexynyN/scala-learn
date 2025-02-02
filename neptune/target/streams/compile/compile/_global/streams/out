@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-cv/neptune/src/main/scala/neptune/Hello.scala:19:9: local var hash in method computeHash is never updated: consider using immutable val[0m
+[0m[[0m[33mwarn[0m] [0m[0m    var hash = new Mat()[0m
+[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
