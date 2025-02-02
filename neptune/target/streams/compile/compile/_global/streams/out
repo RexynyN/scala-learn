@@ -1,4 +1,7 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-cv/neptune/src/main/scala/neptune/Hello.scala:19:9: local var hash in method computeHash is never updated: consider using immutable val[0m
-[0m[[0m[33mwarn[0m] [0m[0m    var hash = new Mat()[0m
-[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/Neptune.scala:4:26: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.log4j.{Level, Logger}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/Neptune.scala:4:33: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.log4j.{Level, Logger}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

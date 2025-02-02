@@ -1,3 +1,8 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/home/breno/codes/scala-cv/neptune/project/"), "neptune-build")...
-[debug] Done updating ProjectRef(uri("file:/home/breno/codes/scala-cv/neptune/project/"), "neptune-build")
+[0m[[0m[33mwarn[0m] [0m[0msbt-assembly.jar no longer exists at /home/breno/.cache/coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.14.10/jars/sbt-assembly.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = false, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/home/breno/codes/scala-learn/neptune/project/"), "neptune-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating neptune-build[0m
+[0m[[0m[0minfo[0m] [0m[0mResolved neptune-build dependencies[0m
+[0m[[0m[0minfo[0m] [0m[0mFetching artifacts of neptune-build[0m
+[0m[[0m[0minfo[0m] [0m[0mFetched artifacts of neptune-build[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/home/breno/codes/scala-learn/neptune/project/"), "neptune-build")[0m

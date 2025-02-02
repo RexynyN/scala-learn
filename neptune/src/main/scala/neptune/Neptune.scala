@@ -5,7 +5,7 @@ import org.apache.log4j.{Level, Logger}
 import java.io.File
 
 
-object ImageHash {
+object Neptune {
     case class ImageHash( path: String, PHash: String, AverageHash: String, BlockMeanHash: String, ColorMomentHash: String, MarrHildrethHash: String, RadialVarianceHash: String)
 
     def listFiles(directory: String): Array[String] = {
@@ -62,15 +62,16 @@ object ImageHash {
         ImageHash(imagePath, pHash, avg, block, color, marr, radial)
     }
 
-    def main(args: Array[String]): Unit = {
-        // STOP LOGGIN' EVER'THANG
-        Logger.getLogger("org").setLevel(Level.ERROR)
 
-        try {
-            val hash = computeHash("image.jpg")
-            println(s"Hash da imagem: $hash")
-        } catch {
-            case e: Exception => println(s"Erro ao calcular hash: ${e.getMessage}")
-        }
-    }
+    // def main(args: Array[String]): Unit = {
+    //     // STOP LOGGIN' EVER'THANG
+    //     Logger.getLogger("org").setLevel(Level.ERROR)
+        
+    //     try {
+    //         val hash = computeHash("image.jpg")
+    //         println(s"Hash da imagem: $hash")
+    //     } catch {
+    //         case e: Exception => println(s"Erro ao calcular hash: ${e.getMessage}")
+    //     }
+    // }
 }
