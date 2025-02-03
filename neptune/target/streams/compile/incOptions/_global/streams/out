@@ -1,26 +1,20 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoHashes.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoProcessor$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoProcessor$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageProcessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageProcessor$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoProcessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageProcessor$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoHashes$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoHashes.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoProcessor$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoProcessor$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageProcessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageProcessor$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoProcessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageProcessor$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoHashes$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoHashes.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoProcessor$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoProcessor$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageProcessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageProcessor$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoProcessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ImageProcessor$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	VideoHashes$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes.bak[0m

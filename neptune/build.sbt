@@ -11,8 +11,8 @@ val platform = org.bytedeco.javacpp.Loader.Detector.getPlatform
 
 // JavaCPP-Preset libraries with native dependencies
 val presetLibs = Seq(
-  "opencv"   -> "4.10.0",
-  "ffmpeg"   -> "7.1",
+  "opencv" -> "4.10.0",
+  "ffmpeg" -> "7.1",
   "openblas" -> "0.3.28"
 ).flatMap { case (lib, ver) =>
   Seq(
@@ -27,20 +27,22 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-sql" % "3.5.4",
   "org.apache.spark" %% "spark-mllib" % "3.5.4",
   "org.apache.spark" %% "spark-streaming" % "3.5.4",
-  "org.bytedeco"            % "javacpp"         % javacppVersion,
-  "org.bytedeco"            % "javacpp"         % javacppVersion classifier platform,
-  "org.bytedeco"            % "javacv"          % javacppVersion,
-  "org.scala-lang.modules" %% "scala-swing"     % "3.0.0",
-  "org.scalafx"            %% "scalafx"         % "23.0.1-R34",
-  "org.scalafx"            %% "scalafx-extras"  % "0.10.1",
+  "org.tpolecat" %% "doobie-core" % "1.0.0-RC1",
+  "org.tpolecat" %% "doobie-hikari" % "1.0.0-RC1",
+  "org.xerial" % "sqlite-jdbc" % "3.40.1.0",
+  "org.bytedeco" % "javacpp" % javacppVersion,
+  "org.bytedeco" % "javacpp" % javacppVersion classifier platform,
+  "org.bytedeco" % "javacv" % javacppVersion,
+  "org.scala-lang.modules" %% "scala-swing" % "3.0.0",
+  "org.scalafx" %% "scalafx" % "23.0.1-R34",
+  "org.scalafx" %% "scalafx-extras" % "0.10.1"
 ) ++ presetLibs
-
 
 // Configuração do Spark
 enablePlugins(AssemblyPlugin)
 assemblyMergeStrategy in assembly := {
-  case PathList("META-INF", _ @ _*) => MergeStrategy.discard
-  case _ => MergeStrategy.first
+  case PathList("META-INF", _ @_*) => MergeStrategy.discard
+  case _                           => MergeStrategy.first
 }
 
 resolvers ++= Resolver.sonatypeOssRepos("snapshots")
