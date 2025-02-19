@@ -23,10 +23,11 @@ val presetLibs = Seq(
 
 // Dependências do Spark e OpenCV
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "3.3.4",
-  "org.apache.spark" %% "spark-sql" % "3.5.4",
-  "org.apache.spark" %% "spark-mllib" % "3.5.4",
-  "org.apache.spark" %% "spark-streaming" % "3.5.4",
+  "org.apache.spark" %% "spark-core" % "3.0.0",
+  "org.apache.spark" %% "spark-sql" % "3.0.0",
+  "org.apache.spark" %% "spark-mllib" % "3.0.0",
+  "org.apache.spark" %% "spark-streaming" % "3.0.0",
+
   "org.tpolecat" %% "doobie-core" % "1.0.0-RC1",
   "org.tpolecat" %% "doobie-hikari" % "1.0.0-RC1",
   "org.xerial" % "sqlite-jdbc" % "3.40.1.0",

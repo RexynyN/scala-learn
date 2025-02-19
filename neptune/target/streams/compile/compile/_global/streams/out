@@ -1,10 +1,22 @@
-[0m[[0m[31merror[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/LLM.scala:10:12: VideoHashes is already defined as case class VideoHashes[0m
-[0m[[0m[31merror[0m] [0m[0mcase class VideoHashes(path: String, hashes: List[Map[String, String]])[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/LLM.scala:12:8: VideoProcessor is already defined as object VideoProcessor[0m
-[0m[[0m[31merror[0m] [0m[0mobject VideoProcessor {[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/LLM.scala:145:8: Main is already defined as object Main[0m
-[0m[[0m[31merror[0m] [0m[0mobject Main {[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:4:39: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.sql.functions._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:5:37: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.feature.{VectorAssembler, StandardScaler}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:5:54: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.feature.{VectorAssembler, StandardScaler}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:6:39: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.regression.LinearRegression[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:7:39: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.evaluation.RegressionEvaluator[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:8:28: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.Pipeline[0m
+[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:9:28: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.PipelineModel[0m
+[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m7 warnings found[0m

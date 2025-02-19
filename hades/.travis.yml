@@ -1,0 +1,17 @@
+language: scala
+install:
+  - pip install --user codecov
+
+scala:
+- 2.13.0
+
+cache:
+  directories:
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt
+
+script:
+  - sbt clean coverage test coverageReport
+
+after_success:
+  - sbt coveralls
