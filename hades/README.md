@@ -1,52 +1,24 @@
-# ![RealWorld Example App using Scala and Play Framework](logo.png)
+# Play samples
 
-> ### Scala & Play Framework codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
+[![Twitter Follow](https://img.shields.io/twitter/follow/playframework?label=follow&style=flat&logo=twitter&color=brightgreen)](https://twitter.com/playframework)
+[![Discord](https://img.shields.io/discord/931647755942776882?logo=discord&logoColor=white)](https://discord.gg/g5s2vtZ4Fa)
+[![GitHub Discussions](https://img.shields.io/github/discussions/playframework/playframework?&logo=github&color=brightgreen)](https://github.com/playframework/playframework/discussions)
+[![StackOverflow](https://img.shields.io/static/v1?label=stackoverflow&logo=stackoverflow&logoColor=fe7a16&color=brightgreen&message=playframework)](https://stackoverflow.com/tags/playframework)
+[![YouTube](https://img.shields.io/youtube/channel/views/UCRp6QDm5SDjbIuisUpxV9cg?label=watch&logo=youtube&style=flat&color=brightgreen&logoColor=ff0000)](https://www.youtube.com/channel/UCRp6QDm5SDjbIuisUpxV9cg)
+[![Twitch Status](https://img.shields.io/twitch/status/playframework?logo=twitch&logoColor=white&color=brightgreen&label=live%20stream)](https://www.twitch.tv/playframework)
+[![OpenCollective](https://img.shields.io/opencollective/all/playframework?label=financial%20contributors&logo=open-collective)](https://opencollective.com/playframework)
 
-### [Referential demo](https://react-redux.realworld.io/)
+[![Build Status](https://github.com/playframework/play-samples/actions/workflows/build-test.yml/badge.svg)](https://github.com/playframework/play-samples/actions/workflows/build-test.yml)
+[![Repository size](https://img.shields.io/github/repo-size/playframework/play-samples.svg?logo=git)](https://github.com/playframework/play-samples)
+[![Scala Steward badge](https://img.shields.io/badge/Scala_Steward-helping-blue.svg?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAMAAAARSr4IAAAAVFBMVEUAAACHjojlOy5NWlrKzcYRKjGFjIbp293YycuLa3pYY2LSqql4f3pCUFTgSjNodYRmcXUsPD/NTTbjRS+2jomhgnzNc223cGvZS0HaSD0XLjbaSjElhIr+AAAAAXRSTlMAQObYZgAAAHlJREFUCNdNyosOwyAIhWHAQS1Vt7a77/3fcxxdmv0xwmckutAR1nkm4ggbyEcg/wWmlGLDAA3oL50xi6fk5ffZ3E2E3QfZDCcCN2YtbEWZt+Drc6u6rlqv7Uk0LdKqqr5rk2UCRXOk0vmQKGfc94nOJyQjouF9H/wCc9gECEYfONoAAAAASUVORK5CYII=)](https://scala-steward.org)
+[![Mergify Status](https://img.shields.io/endpoint.svg?url=https://api.mergify.com/v1/badges/playframework/play-samples&style=flat)](https://mergify.com)
 
-This codebase was created to demonstrate a fully fledged fullstack application built with **Scala & Play Framework** including CRUD operations, authentication, routing, pagination, and more.
+## License
 
-For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
+To the extent possible under law, the author(s) have dedicated all copyright and
+related and neighboring rights to this software to the public domain worldwide.
+This software is distributed without any warranty.
 
-# Getting started
-
-## You need installed:
- * Java >= 8 <= 11,
- * sbt.
-
-Then:
- * sbt test -- to run tests,
- * sbt run -- to run server in dev mode.
-
-# Project's structure
-
-Application is divided into three main modules: articles, authentication and users.
-
-For simplification they are not represented as sbt's subprojects/submodules. Module is represented as single class with `Components` suffix,
-for instance `AuthenticationComponents` or `ArticleComponents`.
-
-Class `RealWorldApplicationLoader` contains "description" of whole application, it combines all modules together and set up
-things like logging, evolutions (db migrations), etc.
-
-Compile time dependency injection is used.
-
-# Security
-
-Simple - naive - JWT authentication implementation is used. Authentication module exists to separate authentication logic from business logic related to users, like update of user's profile, etc.
-
-# Database
-
-Project uses a H2 in memory database by default, it can be changed in the `application.conf` (and in `TestUtils.config` for tests).
-
-Proper JDBC driver needs to be added as dependency in build.sbt.
-
-Additionally to avoid Slick's dependent types all over the place, static imports to concrete Slick's profile are used.
-For instance `import slick.jdbc.H2Profile.api.{DBIO => _, MappedTo => _, Rep => _, TableQuery => _, _}`. They should be changed as well in case of changing underlying database. It looks ugly but imho still better than usage of
-dynamic import through dependent types (check out Slick examples to see that).
-
-Slick was used to implement data access layer mainly because it is supported by Lightbend. It also looks more "scalish".
-
-======
-
-Feel free to comment and improve current implementation!
-
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion by you shall be licensed as above, without any additional terms
+or conditions.

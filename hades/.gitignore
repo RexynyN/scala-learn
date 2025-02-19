@@ -1,30 +1,56 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+logs/
+target/
+RUNNING_PID
 
-# dependencies
-/node_modules
-/bower_components
+# bloop and metals
+.bloop
+.bsp
 
-# IDEs and editors
-/.idea
-.project
+# metals
+project/metals.sbt
+.metals
+*/project/metals.sbt
+*/.metals
+
+# vs code
+.vscode
+
+# scala 3
+.tasty
+
+# sbt
+project/project/
+*/project/project/
+project/target/
+target/
+
+# eclipse
+build/
 .classpath
-*.launch
-.settings/
-project/project
-project/target
-/.idea_modules
-/*.iml
+.project
+.settings
+.worksheet
+bin/
+.cache
 
-#System Files
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+
+# mac
 .DS_Store
-Thumbs.db
 
-/version.conf
-logs
-target
-tmp
+# other?
 .history
-dist
-/out
-/RUNNING_PID
-/.vagrant
+.scala_dependencies
+.cache-main
+
+#general
+*.class
+
+# Gradle
+.gradle
+build
