@@ -28,6 +28,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes/neptune[0m
 [0m[[0m[0mdebug[0m] [0m[0m	neptune/MLProject$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes/neptune/MLProject$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	neptune/MLTest$Data$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes/neptune/MLTest$Data$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	neptune/ImageHasher$ImageHash$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes/neptune/ImageHasher$ImageHash$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	neptune/MLTest.class[0m
@@ -40,6 +42,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes/neptune/ImageHasher.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	neptune/MLProject.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes/neptune/MLProject.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	neptune/MLTest$Data.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes/neptune/MLTest$Data.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	neptune/ImageHasher$ImageHash.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes/neptune/ImageHasher$ImageHash.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

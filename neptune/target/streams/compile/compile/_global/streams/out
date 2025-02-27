@@ -1,6 +1,3 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:4:39: Unused import[0m
-[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.sql.functions._[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                      ^[0m
 [0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:5:37: Unused import[0m
 [0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.feature.{VectorAssembler, StandardScaler}[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
@@ -19,4 +16,4 @@
 [0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:9:28: Unused import[0m
 [0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.PipelineModel[0m
 [0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m7 warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0m6 warnings found[0m
