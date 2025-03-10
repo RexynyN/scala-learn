@@ -1,3 +1,14 @@
+[0m[[0m[31merror[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/Exercises.scala:22:63: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : org.apache.spark.sql.ColumnName[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m        val extra = dept.withColumn("SPLIT", split($"VALUES", $"Delimiter"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:30:37: not found: value median[0m
+[0m[[0m[31merror[0m] [0m[0m            "Age" -> data.agg(round(median(data("Age")), 2).alias("median")).first().getDouble(0),[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:3:30: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.sql.{SparkSession, DataFrame} [0m
+[0m[[0m[33mwarn[0m] [0m[0m                             ^[0m
 [0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:5:37: Unused import[0m
 [0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.feature.{VectorAssembler, StandardScaler}[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
@@ -16,4 +27,8 @@
 [0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:9:28: Unused import[0m
 [0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.ml.PipelineModel[0m
 [0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m6 warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:10:25: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.apache.log4j._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m8 warnings found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
