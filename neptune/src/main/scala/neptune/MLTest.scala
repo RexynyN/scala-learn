@@ -27,7 +27,7 @@ object MLTest {
         numbers.summary().show()
 
         val fillMap = Map(
-            "Age" -> data.agg(round(median(data("Age")), 2).alias("median")).first().getDouble(0),
+            "Age" -> data.agg(round(median(data("Age")), 2)).first().getDouble(0),
             "Fare" -> 0.0,
             "Embarked" -> 0.0
         )
@@ -58,34 +58,32 @@ object MLTest {
         data.na.fill(fillMap)
     }
 
-    def main(args: Array[String]): Unit = {
-        Logger.getLogger("org").setLevel(Level.ERROR)
+    // def main(args: Array[String]): Unit = {
+    //     Logger.getLogger("org").setLevel(Level.ERROR)
         
-        // Criar a Spark Session
-        val spark = SparkSession.builder()
-            .appName("ML")
-            .master("local[*]")
-            .getOrCreate()
+    //     // Criar a Spark Session
+    //     val spark = SparkSession.builder()
+    //         .appName("ML")
+    //         .master("local[*]")
+    //         .getOrCreate()
 
-        // Carregar os dados
-        var data = spark.read
-            .option("header", "true")
-            .option("delimiter", ",")   
-            .option("inferSchema", "true")
-            .csv("Titanic.csv")
-
-
-        // Análise exploratória e Limpeza dos dados
-        data = explorationAnalysis(data)
+    //     // Carregar os dados
+    //     var data = spark.read
+    //         .option("header", "true")
+    //         .option("delimiter", ",")   
+    //         .option("inferSchema", "true")
+    //         .csv("Titanic.csv")
 
 
+    //     // Análise exploratória e Limpeza dos dados
+    //     data = explorationAnalysis(data)
 
-        // Preparação dos dados
-        val assembler = new VectorAssembler()
-            .setInputCols(Array("Pclass", "Age", "SibSp", "Parch", "Fare"))
-            .setOutputCol("features")
-            
 
-    }
+
+    //     // Preparação dos dados
+    //     val assembler = new VectorAssembler()
+    //         .setInputCols(Array("Pclass", "Age", "SibSp", "Parch", "Fare"))
+    //         .setOutputCol("features")
+    // }
 }
 
