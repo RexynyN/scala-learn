@@ -22,7 +22,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
 [0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/breno/codes/scala-learn/neptune/target/scala-2.12/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.10.7:compile for Scala 2.12.18[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 13f28fb3 for Scala compiler version 2.12.18[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 54ece4cc for Scala compiler version 2.12.18[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-unchecked[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
