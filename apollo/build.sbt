@@ -24,10 +24,10 @@ val presetLibs = Seq(
 // Dependências do Spark e OpenCV
 libraryDependencies ++= Seq(
   // Sparky 
-  "org.apache.spark" %% "spark-core" % "3.0.0",
-  "org.apache.spark" %% "spark-sql" % "3.0.0",
-  "org.apache.spark" %% "spark-mllib" % "3.0.0",
-  "org.apache.spark" %% "spark-streaming" % "3.0.0",
+  "org.apache.spark" %% "spark-core" % "3.5.5",
+  "org.apache.spark" %% "spark-sql" % "3.5.5",
+  "org.apache.spark" %% "spark-mllib" % "3.5.5",
+  "org.apache.spark" %% "spark-streaming" % "3.5.5",
 
   // To work with sqlite in Sparky
   "org.xerial" % "sqlite-jdbc" % "3.40.1.0",

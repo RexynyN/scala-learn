@@ -12,11 +12,10 @@ import java.util.UUID
 // 3. Pegar todas as tracks de um album
 
 
-// class SpotifyAPI(val client: String, val secret: String) {
-object SpotifyAPI {
+class SpotifyAPI(val client: String, val secret: String) {
     var spotifyClient: String = ""
     var spotifySecret: String = ""   
-    var spotifyToken: String = ""
+    var spotifyToken: String = UUID.randomUUID().toString.replace("-", "").take(8) // Random token to initialize
 
     // Default request backend
     val requestBackend = DefaultSyncBackend()
@@ -31,6 +30,7 @@ object SpotifyAPI {
     private def saveJson(path: os.Path, json: ujson.Value): Unit = {
         os.write(path, ujson.write(json), createFolders = true)
     }
+    
     // private def readJson(path: String): ujson.Value = {
     //     ujson.read(os.read(os.pwd / "raw.json"))
     // }
@@ -175,20 +175,20 @@ object SpotifyAPI {
         List()
     }
 
-    def main(args: Array[String]): Unit = {
-        spotifyClient = sys.env.get("SPOTIFY_CLIENT")
-            .getOrElse(throw new RuntimeException("Cliente do Spotify não encontrado")) 
+    // def main(args: Array[String]): Unit = {
+    //     spotifyClient = sys.env.get("SPOTIFY_CLIENT")
+    //         .getOrElse(throw new RuntimeException("Cliente do Spotify não encontrado")) 
 
-        spotifySecret = sys.env.get("SPOTIFY_SECRET")
-            .getOrElse(throw new RuntimeException("Secret do Spotify não encontrado")) 
+    //     spotifySecret = sys.env.get("SPOTIFY_SECRET")
+    //         .getOrElse(throw new RuntimeException("Secret do Spotify não encontrado")) 
 
-        refreshToken()
-        val artistId = searchForArtistId("arcane")
-        val albums = getArtistAlbums(artistId)
-        val tracks = albums.flatMap(getAlbumTracks)
+        
+    //     val artistId = searchForArtistId("arcane")
+    //     val albums = getArtistAlbums(artistId)
+    //     val tracks = albums.flatMap(getAlbumTracks)
 
-        print(tracks)
-    }
+    //     print(tracks)
+    // }
 }
 
 
