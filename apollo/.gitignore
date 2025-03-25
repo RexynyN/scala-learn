@@ -1,7 +1,7 @@
 *.csv
 .env
 
-/data
+# /data
 
 # metals
 .metals

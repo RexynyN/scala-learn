@@ -1,0 +1,45 @@
+{
+    "artists": {
+        "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=artist%3Aarcane&type=artist",
+        "limit": 1,
+        "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=artist%3Aarcane&type=artist",
+        "offset": 0,
+        "previous": null,
+        "total": 100,
+        "items": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/57nPqD7z62gDdq37US9XJR"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 628583
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/57nPqD7z62gDdq37US9XJR",
+                "id": "57nPqD7z62gDdq37US9XJR",
+                "images": [
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000e5eba056b2ecc1a70ab57cdcc10b",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab67616100005174a056b2ecc1a70ab57cdcc10b",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https://i.scdn.co/image/ab6761610000f178a056b2ecc1a70ab57cdcc10b",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Arcane",
+                "popularity": 83,
+                "type": "artist",
+                "uri": "spotify:artist:57nPqD7z62gDdq37US9XJR"
+            }
+        ]
+    }
+}
