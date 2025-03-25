@@ -4,7 +4,7 @@
 [0m[[0m[31merror[0m] [0m[0m        val extra = dept.withColumn("SPLIT", split($"VALUES", $"Delimiter"))[0m
 [0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
 [0m[[0m[31merror[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:30:37: not found: value median[0m
-[0m[[0m[31merror[0m] [0m[0m            "Age" -> data.agg(round(median(data("Age")), 2).alias("median")).first().getDouble(0),[0m
+[0m[[0m[31merror[0m] [0m[0m            "Age" -> data.agg(round(median(data("Age")), 2)).first().getDouble(0),[0m
 [0m[[0m[31merror[0m] [0m[0m                                    ^[0m
 [0m[[0m[33mwarn[0m] [0m[0m/home/breno/codes/scala-learn/neptune/src/main/scala/neptune/MLTest.scala:3:30: Unused import[0m
 [0m[[0m[33mwarn[0m] [0m[0mimport org.apache.spark.sql.{SparkSession, DataFrame} [0m
