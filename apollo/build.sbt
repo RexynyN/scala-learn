@@ -29,8 +29,16 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-mllib" % "3.5.5",
   "org.apache.spark" %% "spark-streaming" % "3.5.5",
 
+
+  "org.bytedeco" % "javacv" % "1.5.11",
+  "org.bytedeco" % "javacv-platform" % "1.5.11",
+  "org.bytedeco" % "ffmpeg-platform" % "7.1-1.5.11",
+
   // To work with sqlite in Sparky
   "org.xerial" % "sqlite-jdbc" % "3.40.1.0",
+
+  // Quick maths
+  "org.apache.commons" % "commons-math3" % "3.6.1",
   
   // Scala Toolkit
   "com.lihaoyi" %% "upickle" % "4.1.0", 
